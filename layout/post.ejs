@@ -1,0 +1,48 @@
+<!-- Banner -->
+<%- partial('_partial/banner.ejs', {
+    mainText: page.title || __('default_post_title'),
+    icon: page.icon || theme.default_post_icon || '🧙'
+}) %>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv5-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    <% if (page.tags && page.tags.length) {
+                        var tags = [];
+                        page.tags.forEach(function(tag) {
+                            tags.push('<a class="fw3 ph1" href="' +  config.root + tag.path + '">#' + tag.name + '</a>');
+                        });
+                    %>
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <span class="ec ec-mono pr2">🔖</span><%- tags.join(' ') %>
+                            </div>
+                        </div>
+                    <% } %>
+
+                    <!-- Main Post Content -->
+                    <%- page.content %>
+
+                    <% if (page.date) { %>
+                        <div class="pt3">
+                            <span class="ec ec-mono pr2">🕗</span><%- page.date.format(config.date_format) %>
+                        </div>
+                    <% } %>
+                    <!-- Tags Bottom -->
+                    <% if (page.tags && page.tags.length) { %>
+                        <div class="tags-container-bottom">
+                            <span class="ec ec-mono pr2">🔖</span><%- tags.join(' ') %>
+                        </div>
+                    <% } %>
+
+                    <!-- Comments -->
+                    <%- partial('_partial/comments.ejs') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

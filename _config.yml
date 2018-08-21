@@ -1,0 +1,23 @@
+# Index Page
+index_icon: 🤝
+
+# Archive Date Format
+archive_date_format: MMM YYYY
+
+twitter_handle: '@tomap'
+
+# Social Media Platforms, also used for comments
+social_platforms:
+  - url: https://stackoverflow.com/users/383029/tomap
+    icon: stackoverflow
+  - url: https://github.com/tomap/
+    icon: github
+    type: github
+    repository: tpi2.eu
+  - url: https://linkedin.com/in/thomaspiart
+    icon: linkedin
+    type: linkedin
+  - url: https://twitter.com/tomap
+    icon: twitter
+    type: twitter
+    account: tomap
