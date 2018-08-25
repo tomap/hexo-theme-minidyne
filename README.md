@@ -4,7 +4,7 @@
 ![Screenshot of this site](https://hexo-theme-minidyne-demo.netlify.com/screenshot.png)
 
 [Live Demo on Netlify](https://hexo-theme-minidyne-demo.netlify.com/)
-([Source for the demo on Github](https://github.com/tomap/hexo-theme-mindyne-demo))
+([Source for the demo on Github](https://github.com/tomap/hexo-theme-minidyne-demo))
 
 <!-- more -->
 
