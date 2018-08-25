@@ -1,23 +1,32 @@
 # Index Page
-index_icon: 🤝
+index_icon: 🦄
+
+menu:
+  Home: /
+  Archives: /archives
+  About: /about.html
+  Project: /project.html
+
+
+default_post_icon: 🧙
 
 # Archive Date Format
 archive_date_format: MMM YYYY
 
-twitter_handle: '@tomap'
+twitter_handle: '@johndoe'
 
 # Social Media Platforms, also used for comments
 social_platforms:
-  - url: https://stackoverflow.com/users/383029/tomap
+  - url: https://stackoverflow.com/users/12345/johndoe
     icon: stackoverflow
-  - url: https://github.com/tomap/
+  - url: https://github.com/johndoe/
     icon: github
     type: github
-    repository: tpi2.eu
-  - url: https://linkedin.com/in/thomaspiart
+    repository: johndoe.blog
+  - url: https://linkedin.com/in/johndoe
     icon: linkedin
     type: linkedin
-  - url: https://twitter.com/tomap
+  - url: https://twitter.com/johndoe
     icon: twitter
     type: twitter
-    account: tomap
+    account: johndoe

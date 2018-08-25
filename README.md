@@ -11,19 +11,21 @@
 - Responsive
 - Tags Support
 - Responsive Images
-- Responsive YouTube and Vimeo videos
 - Social Accounts configuration
 - Pagination
 - Pages
+- Two languages (French & English)
 - Stylus CSS preprocessor
 - ejs HTML templates
-- Standalone (single css file, no external file)
-- Static (no js, none)
-- Emoji Icons & SVG for social icons
+- Standalone (single css file, no external file) 🥊
+- Static (no js, one single css) 🧱
+- Emoji Icons for blog posts ✨
+- SVG for social icons (twitter, stackoverflow, linkedIn 📰)
 
 ## External libraries used
 
-- [tachyons](http://tachyons.io/)
+- [tachyons](https://tachyons.io/)
+- [SimpleIcons](https://simpleicons.org/) for brands
 
 ## Installation
 
@@ -44,7 +46,7 @@ theme: minidyne
 ```
 
 You'll also need the following hexo plugins for this theme to work.
-Add them in the package.json:
+Add them in the package.json (they should alread be there, but just in case):
 ```json
 "dependencies": {
     "hexo-generator-archive": "^0.1.5",
@@ -71,6 +73,7 @@ tags: ["ThisIsATag", "Intro", "Welcome", "Minidyne"]
 icon: 🤝
 ---
 ```
+Pick one from https://emojipedia.org/
 
 ## Theme Configuration
 
@@ -90,19 +93,22 @@ menu:
 
 The object key is the label and the value is the path.
 
-### Blog's main icon (as emoji)
+### Blog's home page
 
-The blog's icon is configured in the theme's `_config.yml`.
+The blog's icon & title is configured in the theme's `_config.yml`.
 
-It should be an emoji. Pick one from https://emojipedia.org/
+The icon should be an emoji. Pick one from https://emojipedia.org/
 
 ``` yaml
+# Index Page
+index_banner_text: Welcome to Minidyne
+
 # Logo
-'index_icon: ❤️
+index_icon: ❤️
 ```
 ### Default post title
 
-The default post title (used when no title is specified) is configured in the theme's translation file in `/themes/hexo-theme-minidyne/languages`.
+The default post title (used when no title is specified) is configured in the theme's translation file in `/themes/minidyne/languages`.
 
 ``` yaml
 default_post_title: "Untitled"
@@ -114,16 +120,6 @@ The default post icon (used when no icon is specified) is configured in the them
 
 ``` yaml
 default_post_icon: 🧙
-```
-
-### Home page configuration
-
-Likewise, you can configure the home page's title, subtitle and icon in the `_config.yml`
-
-``` yaml
-# Index Page
-index_banner_text: Welcome to Minidyne
-index_icon: 🧙
 ```
 
 ### Archive Date Format
@@ -142,13 +138,24 @@ Setup the links to your social pages in the theme's `_config.yml` as an array of
 Example:
 
 ``` yaml
-# Social Accounts
+# Social Media Platforms, also used for comments
 social_platforms:
-  - url: https://twitter.com/?lang=en
-    icon: twitter
-  - url: https://github.com/tomap
+  - url: https://stackoverflow.com/users/12345/johndoe
+    icon: stackoverflow
+  - url: https://github.com/johndoe/
     icon: github
+    type: github
+    repository: johndoe.blog
+  - url: https://linkedin.com/in/johndoe
+    icon: linkedin
+    type: linkedin
+  - url: https://twitter.com/johndoe
+    icon: twitter
+    type: twitter
+    account: johndoe
 ```
+
+They are used for sharing comments on your posts. Some need more properties than others
 
 ## Creator
 
