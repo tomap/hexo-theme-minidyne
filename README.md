@@ -59,6 +59,13 @@ Add them in the package.json (they should alread be there, but just in case):
   }
 ```
 
+
+## Limitations
+
+This theme does not handle
+- Categories (so you can drop the default dependency to "hexo-generator-category" )
+- Images gallery
+
 ## Post Configuration
 
 Each post supports the standard `title`, `date`, `tags`.
