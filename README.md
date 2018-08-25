@@ -1,8 +1,10 @@
 # Welcome to Minidyne, a minimalist hexo theme
 
-[![Screenshot](todo)](sample)
 
-[Live Demo Here](demo)
+![Screenshot of this site](https://hexo-theme-minidyne-demo.netlify.com/screenshot.png)
+
+[Live Demo on Netlify](https://hexo-theme-minidyne-demo.netlify.com/)
+([Source for the demo on Github](https://github.com/tomap/hexo-theme-mindyne-demo))
 
 <!-- more -->
 
@@ -24,7 +26,7 @@
 
 ## External libraries used
 
-- [tachyons](https://tachyons.io/)
+- [tachyons](https://tachyons.io/) for Css Framework
 - [SimpleIcons](https://simpleicons.org/) for brands
 
 ## Installation
