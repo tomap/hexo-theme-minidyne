@@ -16,7 +16,7 @@
 - Social Accounts configuration
 - Pagination
 - Pages
-- Two languages (French & English)
+- Three languages (French, English and German)
 - Stylus CSS preprocessor
 - ejs HTML templates
 - Standalone (single css file, no external file) 🥊
