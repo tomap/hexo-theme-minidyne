@@ -1,6 +1,6 @@
 prev: Previous
 next: Next
-archive_a: Archives
-archive_b: "Archives: %s"
+archive_a: Archive
+archive_b: "Archive: %s"
 recent_posts: "Recent Posts"
 default_post_title: "Untitled"
