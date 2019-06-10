@@ -1,31 +1,24 @@
 # Index Page
 index_icon: 🦄
 
-menu:
-  Home: /
-  Archives: /archives
-  About: /about.html
-
-
-default_post_icon: 🧙
-
-# Archive Date Format
-archive_date_format: MMM YYYY
-
 twitter_handle: '@johndoe'
 
 # Social Media Platforms, also used for comments
 social_platforms:
   - url: https://stackoverflow.com/users/12345/johndoe
     icon: stackoverflow
+    name: StackOverflow
   - url: https://github.com/johndoe/
     icon: github
     type: github
+    name: GitHub
     repository: johndoe.blog
   - url: https://linkedin.com/in/johndoe
     icon: linkedin
     type: linkedin
+    name: LinkedIn
   - url: https://twitter.com/johndoe
     icon: twitter
     type: twitter
+    name: Twitter
     account: johndoe
