@@ -20,7 +20,7 @@
 - Stylus CSS preprocessor
 - ejs HTML templates
 - Standalone (single css file, no external file) 🥊
-- Static (no js, one single css) 🧱
+- Static (no js, one single css) 🍊
 - Emoji Icons for blog posts ✨
 - SVG for social icons (twitter, stackoverflow, linkedIn 📰)
 
