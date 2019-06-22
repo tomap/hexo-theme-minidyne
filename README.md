@@ -35,8 +35,8 @@ This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hex
 
 Install the theme by using:
 
-```
-$ git clone https://github.com/tomap/hexo-theme-mindyne themes/minidyne
+```bash
+git clone https://github.com/tomap/hexo-theme-mindyne themes/minidyne
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `minidyne`:
@@ -49,6 +49,7 @@ theme: minidyne
 
 You'll also need the following hexo plugins for this theme to work.
 Add them in the package.json (they should already be there, but just in case):
+
 ```json
 "dependencies": {
     "hexo-generator-index": "^0.2.1",
@@ -61,6 +62,7 @@ Add them in the package.json (they should already be there, but just in case):
 ## Limitations
 
 This theme does not handle
+
 - Categories (so you can drop the default dependency to "hexo-generator-category" )
 - Archives (so you can drop the default dependency to "hexo-generator-archive". If you want archives, head over to [V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
 - Images gallery
@@ -82,6 +84,7 @@ tags: ["ThisIsATag", "Intro", "Welcome", "Minidyne"]
 icon: 🤝
 ---
 ```
+
 Pick one from https://emojipedia.org/
 
 ## Theme Configuration
@@ -114,6 +117,7 @@ index_banner_text: Welcome to Minidyne
 # Logo
 index_icon: ❤️
 ```
+
 ### Default post title
 
 The default post title (used when no title is specified) is configured in the theme's translation file in `/themes/minidyne/languages`.
@@ -161,7 +165,7 @@ They are used for sharing comments on your posts. Some need more properties than
 
 ## Creator
 
-This theme was created by [Thomas Piart](https://tpî.eu) initially based upon (Anodyne Theme)(https://github.com/klugjo/hexo-theme-anodyne) by [Jonathan Klughertz](http://www.codeblocq.com/) and also influenced by other minimalist approaches like (mnmlist)[http://mnmlist.com/w/].
+This theme was created by [Thomas Piart](https://tpî.eu) initially based upon (Anodyne Theme)(https://github.com/klugjo/hexo-theme-anodyne) by [Jonathan Klughertz](http://www.codeblocq.com/) and also influenced by other minimalist approaches like [mnmlist](http://mnmlist.com/w/).
 
 ## Bugs
 
