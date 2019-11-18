@@ -1,0 +1,15 @@
+{
+  "name": "hexo-theme-minidyne",
+  "version": "3.0.0",
+  "description": "Hexo theme minidyne",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomap/hexo-theme-minidyne.git"
+  },
+  "author": "Thomas Piart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomap/hexo-theme-minidyne/issues"
+  },
+  "homepage": "https://github.com/tomap/hexo-theme-minidyne#readme"
+}

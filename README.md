@@ -7,7 +7,9 @@
 
 <!-- more -->
 
-This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1)
+This is V3. 
+For V2 of this theme, [head over to V2](https://github.com/tomap/hexo-theme-minidyne/tree/v2).
+For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1).
 
 ## Features Overview
 
@@ -27,7 +29,7 @@ This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hex
 ## External libraries used
 
 - [tachyons](https://tachyons.io/) for Css Framework
-- [SimpleIcons](https://simpleicons.org/) for brands
+- [SimpleIcons](https://simpleicons.org/) for brand icons
 
 ## Installation
 
@@ -61,7 +63,7 @@ Add them in the package.json (they should already be there, but just in case):
 
 ## Limitations
 
-This theme does not handle
+This theme does not handle:
 
 - Categories (so you can drop the default dependency to "hexo-generator-category" )
 - Archives (so you can drop the default dependency to "hexo-generator-archive". If you want archives, head over to [V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
@@ -89,79 +91,52 @@ Pick one from https://emojipedia.org/
 
 ## Theme Configuration
 
-The theme's global configuration is done in `/themes/minidyne/_config.yml`.
-
-### Menu
-
-The menu is configured in the theme's `_config.yml` or in the root `_config.yml`.
+The theme's global configuration is done in the main `_config.yml` under the config key `minidyne`:
 
 ``` yaml
-# Header
-menu:
-  Home: /
-  About: /about.html
+minidyne:
+  default_post_title: "Untitled"
+  # Header
+  menu:
+    Home: /
+    About: /about.html
+  
+  # Index banner text
+  index_banner_text: Welcome to Minidyne
+
+  # Logo
+  index_icon: ❤️
+
+  default_post_title: "Untitled"
+
+  default_post_icon: 🧙
+
+  # Social Media Platforms, also used for comments
+  social_platforms:
+    - url: https://stackoverflow.com/users/12345/johndoe
+      icon: stackoverflow
+    - url: https://github.com/johndoe/
+      icon: github
+      type: github
+      name: GitHub
+      repository: johndoe.blog
+    - url: https://linkedin.com/in/johndoe
+      icon: linkedin
+      type: linkedin
+      name: LinkedIn
+    - url: https://twitter.com/johndoe
+      icon: twitter
+      type: twitter
+      name: Twitter
+      account: johndoe
 ```
 
-The object key is the label and the value is the path.
-
-### Blog's home page
-
-The blog's icon & title is configured in the theme's `_config.yml`.
-
-The icon should be an emoji. Pick one from https://emojipedia.org/
-
-``` yaml
-# Index Page
-index_banner_text: Welcome to Minidyne
-
-# Logo
-index_icon: ❤️
-```
-
-### Default post title
-
-The default post title (used when no title is specified) is configured in the theme's translation file in `/themes/minidyne/languages`.
-
-``` yaml
-default_post_title: "Untitled"
-```
-
-### Default post icon
-
-The default post icon (used when no icon is specified) is configured in the theme's `_config.yml`.
-
-``` yaml
-default_post_icon: 🧙
-```
-
-### Social Account
-
-Setup the links to your social pages in the theme's `_config.yml` as an array of objects. Links are in the footer.
-
-Example:
-
-``` yaml
-# Social Media Platforms, also used for comments
-social_platforms:
-  - url: https://stackoverflow.com/users/12345/johndoe
-    icon: stackoverflow
-  - url: https://github.com/johndoe/
-    icon: github
-    type: github
-    name: GitHub
-    repository: johndoe.blog
-  - url: https://linkedin.com/in/johndoe
-    icon: linkedin
-    type: linkedin
-    name: LinkedIn
-  - url: https://twitter.com/johndoe
-    icon: twitter
-    type: twitter
-    name: Twitter
-    account: johndoe
-```
-
-They are used for sharing comments on your posts. Some need more properties than others
+* `menu`: The object key is the label and the value is the path.
+* `index_banner_text` The title appears on the home page.
+* `index_icon` The icon should be an emoji. Pick one from https://emojipedia.org/
+* `default_post_title` The default post title (used when no title is specified).
+* `default_post_icon` The default post icon (used when no icon is specified) is configured in the main `_config.yml`.
+* `social_platforms` Social Account: Setup the links to your social pages in the theme's `_config.yml` as an array of objects. Links are in the footer. They are used for sharing comments on your posts. Some need more properties than others
 
 ## Creator
 
