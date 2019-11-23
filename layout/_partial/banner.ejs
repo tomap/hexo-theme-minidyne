@@ -3,7 +3,7 @@
 
     <nav class="db w-100 mw8 center border-box pv3">
         <div class="db v-mid w-100 tc tr-ns">
-            <% var menu = (theme.menu || config.menu) %>
+            <% var menu = theme.menu %>
             <% for (var i in menu) { %>
                 <a class="link dim f6 f5-l dib mr3 mr4-l white" 
                     href="<%- url_for(menu[i]) %>">

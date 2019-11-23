@@ -38,7 +38,7 @@ For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-mini
 Install the theme by using:
 
 ```bash
-git clone https://github.com/tomap/hexo-theme-mindyne themes/minidyne
+npm i hexo-theme-mindyne --save
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `minidyne`:
@@ -47,6 +47,7 @@ i.e:
 
 ``` yaml
 theme: minidyne
+themeFromNpm: true
 ```
 
 You'll also need the following hexo plugins for this theme to work.
@@ -91,10 +92,10 @@ Pick one from https://emojipedia.org/
 
 ## Theme Configuration
 
-The theme's global configuration is done in the main `_config.yml` under the config key `minidyne`:
+The theme's global configuration is done in the main `_config.yml` under the config key `theme_config`:
 
 ``` yaml
-minidyne:
+theme_config:
   default_post_title: "Untitled"
   # Header
   menu:
