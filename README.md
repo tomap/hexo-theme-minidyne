@@ -7,7 +7,12 @@
 
 <!-- more -->
 
-This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1)
+[![NPM version](https://badge.fury.io/js/hexo-theme-minidyne.svg)](https://www.npmjs.com/package/hexo-theme-minidyne)
+[![Dependency Status](https://david-dm.org/tomap/hexo-theme-minidyne/dev-status.svg)](https://david-dm.org/tomap/hexo-theme-minidyne?type=dev)
+
+This is V3. 
+For V2 of this theme, [head over to V2](https://github.com/tomap/hexo-theme-minidyne/tree/v2).
+For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1).
 
 ## Features Overview
 
@@ -23,11 +28,12 @@ This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hex
 - Static (no js, one single css) 🍊
 - Emoji Icons for blog posts ✨
 - SVG for social icons (Twitter, StackOverflow, LinkedIn 📰)
+- Rss Icon (can be disabled)
 
 ## External libraries used
 
 - [tachyons](https://tachyons.io/) for Css Framework
-- [SimpleIcons](https://simpleicons.org/) for brands
+- [SimpleIcons](https://simpleicons.org/) for brand icons
 
 ## Installation
 
@@ -36,7 +42,7 @@ This is V2. For V1 of this theme, [head over to V1](https://github.com/tomap/hex
 Install the theme by using:
 
 ```bash
-git clone https://github.com/tomap/hexo-theme-mindyne themes/minidyne
+npm i hexo-theme-mindyne --save
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `minidyne`:
@@ -52,16 +58,17 @@ Add them in the package.json (they should already be there, but just in case):
 
 ```json
 "dependencies": {
-    "hexo-generator-index": "^0.2.1",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-stylus": "^0.3.3"
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
   }
 ```
 
 ## Limitations
 
-This theme does not handle
+This theme does not handle:
 
 - Categories (so you can drop the default dependency to "hexo-generator-category" )
 - Archives (so you can drop the default dependency to "hexo-generator-archive". If you want archives, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
@@ -89,79 +96,60 @@ Pick one from https://emojipedia.org/
 
 ## Theme Configuration
 
-The theme's global configuration is done in `/themes/minidyne/_config.yml`.
-
-### Menu
-
-The menu is configured in the theme's `_config.yml` or in the root `_config.yml`.
+The theme's global configuration is done in the main `_config.yml` under the config key `theme_config`:
 
 ``` yaml
-# Header
-menu:
-  Home: /
-  About: /about.html
+theme_config:
+  default_post_title: "Untitled"
+  # Header
+  menu:
+    Home: /
+    About: /about.html
+  
+  # Index banner text
+  index_banner_text: Welcome to Minidyne
+
+  # Logo
+  index_icon: ❤️
+
+  default_post_title: "Untitled"
+
+  default_post_icon: 🧙
+
+  # Social Media Platforms, also used for comments
+  social_platforms:
+    - url: https://stackoverflow.com/users/12345/johndoe
+      icon: stackoverflow
+    - url: https://github.com/johndoe/
+      icon: github
+      type: github
+      name: GitHub
+      repository: johndoe.blog
+    - url: https://linkedin.com/in/johndoe
+      icon: linkedin
+      type: linkedin
+      name: LinkedIn
+    - url: https://twitter.com/johndoe
+      icon: twitter
+      type: twitter
+      name: Twitter
+      account: johndoe
+    - url: /rss2.xml
+      icon: rss
+      type: rss
+      name: Rss
 ```
 
-The object key is the label and the value is the path.
+* `menu`: The object key is the label and the value is the path.
+* `index_banner_text` The title appears on the home page.
+* `index_icon` The icon should be an emoji. Pick one from https://emojipedia.org/
+* `default_post_title` The default post title (used when no title is specified).
+* `default_post_icon` The default post icon (used when no icon is specified) is configured in the main `_config.yml`.
+* `social_platforms` Social Account: Setup the links to your social pages in the theme's `_config.yml` as an array of objects. Links are in the footer. They are used for sharing comments on your posts. Some need more properties than others
 
-### Blog's home page
+## Note
 
-The blog's icon & title is configured in the theme's `_config.yml`.
-
-The icon should be an emoji. Pick one from https://emojipedia.org/
-
-``` yaml
-# Index Page
-index_banner_text: Welcome to Minidyne
-
-# Logo
-index_icon: ❤️
-```
-
-### Default post title
-
-The default post title (used when no title is specified) is configured in the theme's translation file in `/themes/minidyne/languages`.
-
-``` yaml
-default_post_title: "Untitled"
-```
-
-### Default post icon
-
-The default post icon (used when no icon is specified) is configured in the theme's `_config.yml`.
-
-``` yaml
-default_post_icon: 🧙
-```
-
-### Social Account
-
-Setup the links to your social pages in the theme's `_config.yml` as an array of objects. Links are in the footer.
-
-Example:
-
-``` yaml
-# Social Media Platforms, also used for comments
-social_platforms:
-  - url: https://stackoverflow.com/users/12345/johndoe
-    icon: stackoverflow
-  - url: https://github.com/johndoe/
-    icon: github
-    type: github
-    name: GitHub
-    repository: johndoe.blog
-  - url: https://linkedin.com/in/johndoe
-    icon: linkedin
-    type: linkedin
-    name: LinkedIn
-  - url: https://twitter.com/johndoe
-    icon: twitter
-    type: twitter
-    name: Twitter
-    account: johndoe
-```
-
-They are used for sharing comments on your posts. Some need more properties than others
+The devDependency in package.json is just here to know when there is an update for Tachyons
 
 ## Creator
 
