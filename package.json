@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/tomap/hexo-theme-minidyne/issues"
   },
-  "homepage": "https://github.com/tomap/hexo-theme-minidyne#readme"
+  "homepage": "https://github.com/tomap/hexo-theme-minidyne#readme",
+  "devDependencies": {
+    "tachyons": "^4.12.0"
+  }
 }

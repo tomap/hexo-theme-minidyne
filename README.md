@@ -25,6 +25,7 @@ For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-mini
 - Static (no js, one single css) 🍊
 - Emoji Icons for blog posts ✨
 - SVG for social icons (Twitter, StackOverflow, LinkedIn 📰)
+- Rss Icon (can be disabled)
 
 ## External libraries used
 
@@ -55,10 +56,11 @@ Add them in the package.json (they should already be there, but just in case):
 
 ```json
 "dependencies": {
-    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-stylus": "^1.1.0"
+    "hexo-renderer-stylus": "^2.0.0",
   }
 ```
 
@@ -130,6 +132,10 @@ theme_config:
       type: twitter
       name: Twitter
       account: johndoe
+    - url: /rss2.xml
+      icon: rss
+      type: rss
+      name: Rss
 ```
 
 * `menu`: The object key is the label and the value is the path.
@@ -138,6 +144,10 @@ theme_config:
 * `default_post_title` The default post title (used when no title is specified).
 * `default_post_icon` The default post icon (used when no icon is specified) is configured in the main `_config.yml`.
 * `social_platforms` Social Account: Setup the links to your social pages in the theme's `_config.yml` as an array of objects. Links are in the footer. They are used for sharing comments on your posts. Some need more properties than others
+
+## Note
+
+The devDependency in package.json is just here to know when there is an update for Tachyons
 
 ## Creator
 

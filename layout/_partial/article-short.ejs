@@ -1,9 +1,9 @@
-<div class="relative-l mb2">
+<div class="relative-l mb2 hover-b-mc b--white bl">
     <a href="<%- url_for(item.path) %>">
-        <div class="dt w-100 hover-border-main-color pointer pa3 b--white bl mv4-l">
+        <div class="dt w-100 pointer pa3 pb3-l pb0  mv4-l">
             <div class="dtc v-mid w-90 black-70">
                 <% if(item.date) { %>
-                    <div class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></div> 
+                    <div class="f5 fw3 lh-copy pr4 pt2"><%= item.date.format(config.date_format) %></div> 
                 <% } %>
                 <span class="f3 fw3 lh-copy"><%- item.title || __('default_post_title') %></span>
             </div>
@@ -12,11 +12,11 @@
             </div>
         </div>
     </a>
-    <div class="absolute-l top-1 left-1 ml2 ml6-l mr5-l">
+    <div class="absolute-l top-1 left-1 ml3 ml6-l mr5-l">
         <% if (item.tags && item.tags.length) {
             var tags = [];
             item.tags.forEach(function(tag) {
-                tags.push('<a class="fw3 ph1 dib glow o-80" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+                tags.push('<a class="fw3 pa2 dib glow o-80" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
             });
         %>
         <%- tags.join(' ') %>

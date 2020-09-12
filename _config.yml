@@ -22,6 +22,10 @@ social_platforms:
     type: twitter
     name: Twitter
     account: johndoe
+  - url: /rss2.xml
+    icon: rss
+    type: rss
+    name: Rss
 
 main-color: '#a62'
 gradient-color-1: '#f95'
