@@ -7,6 +7,10 @@
 
 <!-- more -->
 
+
+[![NPM version](https://badge.fury.io/js/hexo-theme-minidyne.svg)](https://www.npmjs.com/package/hexo-theme-minidyne)
+[![Dependency Status](https://david-dm.org/tomap/hexo-theme-minidyne/dev-status.svg)](https://david-dm.org/tomap/hexo-theme-minidyne?type=dev)
+
 This is V3. 
 For V2 of this theme, [head over to V2](https://github.com/tomap/hexo-theme-minidyne/tree/v2).
 For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1).
