@@ -7,7 +7,6 @@
 
 <!-- more -->
 
-
 [![NPM version](https://badge.fury.io/js/hexo-theme-minidyne.svg)](https://www.npmjs.com/package/hexo-theme-minidyne)
 [![Dependency Status](https://david-dm.org/tomap/hexo-theme-minidyne/dev-status.svg)](https://david-dm.org/tomap/hexo-theme-minidyne?type=dev)
 
@@ -52,7 +51,6 @@ i.e:
 
 ``` yaml
 theme: minidyne
-themeFromNpm: true
 ```
 
 You'll also need the following hexo plugins for this theme to work.
