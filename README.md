@@ -67,9 +67,9 @@ Add them in the package.json (they should already be there, but just in case):
 This theme does not handle:
 
 - Categories (so you can drop the default dependency to "hexo-generator-category" )
-- Archives (so you can drop the default dependency to "hexo-generator-archive". If you want archives, head over to [V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
+- Archives (so you can drop the default dependency to "hexo-generator-archive". If you want archives, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
 - Images gallery
-- Pagination (if you want pagination, head over to [V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
+- Pagination (if you want pagination, [head over to V1 branch](https://github.com/tomap/hexo-theme-minidyne/tree/v1))
 
 ## Post Configuration
 
