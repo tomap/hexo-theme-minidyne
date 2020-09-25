@@ -1,0 +1,19 @@
+name: publish
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@latest
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish --dry-run
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
