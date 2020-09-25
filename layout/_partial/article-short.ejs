@@ -15,9 +15,13 @@
     <div class="absolute-l top-1 left-1 ml3 ml6-l mr5-l">
         <% if (item.tags && item.tags.length) {
             var tags = [];
-            item.tags.forEach(function(tag) {
-                tags.push('<a class="fw3 pa2 dib glow o-80" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
-            });
+            item.tags
+                .filter(function(elem) { 
+                    return elem.name != page.tag;
+                })
+                .forEach(function(tag) {
+                    tags.push('<a class="fw3 pa2 dib glow o-80" href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+                });
         %>
         <%- tags.join(' ') %>
         <% } %>

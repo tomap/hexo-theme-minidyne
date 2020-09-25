@@ -73,6 +73,9 @@
                 title.push('#' + tag.name);
             });
         }
+        if (page.tag) {
+            title.push('#' + page.tag);
+        }
         title.push(config.title);
     %>
     <title><%= title.join(' - ') %></title>
