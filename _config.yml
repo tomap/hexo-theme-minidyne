@@ -22,6 +22,10 @@ social_platforms:
     type: twitter
     name: Twitter
     account: johndoe
+  - url: https://www.flickr.com/photos/johndoe/
+    icon: flickr
+    type: flickr
+    name: Flickr
   - url: /rss2.xml
     icon: rss
     type: rss
