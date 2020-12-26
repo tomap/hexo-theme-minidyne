@@ -5,31 +5,31 @@ twitter_handle: '@johndoe'
 
 # Social Media Platforms, also used for comments
 social_platforms:
-  - url: https://stackoverflow.com/users/12345/johndoe
-    icon: stackoverflow
-    name: StackOverflow
-  - url: https://github.com/johndoe/
-    icon: github
-    type: github
-    name: GitHub
-    repository: johndoe.blog
-  - url: https://linkedin.com/in/johndoe
-    icon: linkedin
-    type: linkedin
-    name: LinkedIn
-  - url: https://twitter.com/johndoe
-    icon: twitter
-    type: twitter
-    name: Twitter
-    account: johndoe
-  - url: https://www.flickr.com/photos/johndoe/
-    icon: flickr
-    type: flickr
-    name: Flickr
-  - url: /rss2.xml
-    icon: rss
-    type: rss
-    name: Rss
+  # - url: https://stackoverflow.com/users/12345/johndoe
+  #   icon: stackoverflow
+  #   name: StackOverflow
+  # - url: https://github.com/johndoe/
+  #   icon: github
+  #   type: github
+  #   name: GitHub
+  #   repository: johndoe.blog
+  # - url: https://linkedin.com/in/johndoe
+  #   icon: linkedin
+  #   type: linkedin
+  #   name: LinkedIn
+  # - url: https://twitter.com/johndoe
+  #   icon: twitter
+  #   type: twitter
+  #   name: Twitter
+  #   account: johndoe
+  # - url: https://www.flickr.com/photos/johndoe/
+  #   icon: flickr
+  #   type: flickr
+  #   name: Flickr
+  # - url: /rss2.xml
+  #   icon: rss
+  #   type: rss
+  #   name: Rss
 
 main-color: '#a62'
 gradient-color-1: '#f95'
