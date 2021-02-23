@@ -1,4 +1,4 @@
-<% if(page.comments){ var first = true; %>
+<% if(page.comments && theme.social_platforms){ var first = true; %>
     <div class="pt3 comment">
     <% theme.social_platforms.forEach(function(platform) { %>
         <% if (['twitter', 'github', 'linkedin'].indexOf(platform.type) >= 0 ) { %>
