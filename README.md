@@ -27,7 +27,7 @@ For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-mini
 - Standalone (single css file, no external file) 🥊
 - Static (no js, one single css) 🍊
 - Emoji Icons for blog posts ✨
-- SVG for social icons (Twitter, StackOverflow, LinkedIn, Flickr 📰)
+- SVG for social icons (Twitter, StackOverflow, LinkedIn, Mastodon, Github, Flickr 📰)
 - Rss Icon (can be disabled)
 
 ## External libraries used
@@ -138,6 +138,10 @@ theme_config:
       icon: flickr
       type: flickr
       name: Flickr
+    - url: https://mastodon.social/@johndoe
+      icon: mastodon
+      type: mastodon
+      name: Mastodon
     - url: /rss2.xml
       icon: rss
       type: rss

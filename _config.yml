@@ -26,6 +26,10 @@ social_platforms:
   #   icon: flickr
   #   type: flickr
   #   name: Flickr
+  # - url: https://mastodon.social/@johndoe
+  #   icon: mastodon
+  #   type: mastodon
+  #   name: Mastodon
   # - url: /rss2.xml
   #   icon: rss
   #   type: rss
