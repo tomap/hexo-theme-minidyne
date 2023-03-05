@@ -120,6 +120,7 @@ theme_config:
   social_platforms:
     - url: https://stackoverflow.com/users/12345/johndoe
       icon: stackoverflow
+      name: Stack Overflow
     - url: https://github.com/johndoe/
       icon: github
       type: github
