@@ -2,7 +2,7 @@
     <% if(theme.social_platforms){ theme.social_platforms.forEach(function(platform) { %>
         <a class="dib m3 glow o-70 link black ma2"
             href="<%- platform.url %>"
-            target="_blank" rel="<%- if(platform.type == 'mastodon') { "me" } -%> noopener noreferrer">
+            target="_blank" rel="<% if(platform.type == 'mastodon') { %>me <% } %> noopener noreferrer">
             <i class="ic ic-<%- platform.icon %>"></i>
             <span class="db mt2"><%- platform.name %></span>
         </a>
