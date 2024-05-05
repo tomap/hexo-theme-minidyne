@@ -1,3 +1,6 @@
+[!WARNING]
+V4 is a work in progress. Don't install / use until ready :)
+
 # Welcome to Minidyne, a minimalist hexo theme
 
 ![Screenshot of this site](https://hexo-theme-minidyne-demo.netlify.com/screenshot.png)
@@ -9,7 +12,8 @@
 
 [![NPM version](https://badge.fury.io/js/hexo-theme-minidyne.svg)](https://www.npmjs.com/package/hexo-theme-minidyne)
 
-This is V3. 
+This is V4. 
+For V3 of this theme, [head over to V3](https://github.com/tomap/hexo-theme-minidyne/tree/v3).
 For V2 of this theme, [head over to V2](https://github.com/tomap/hexo-theme-minidyne/tree/v2).
 For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-minidyne/tree/v1).
 
@@ -21,8 +25,8 @@ For V1 of this theme, [head over to V1](https://github.com/tomap/hexo-theme-mini
 - Responsive Images
 - Social Accounts configuration
 - Pages
-- Stylus CSS preprocessor
 - ejs HTML templates
+- Raw CSS. *Use PostCss to build a single CSS*
 - Standalone (single css file, no external file) 🥊
 - Static (no js, one single css) 🍊
 - Emoji Icons for blog posts ✨
@@ -56,12 +60,13 @@ You'll also need the following hexo plugins for this theme to work.
 Add them in the package.json (they should already be there, but just in case):
 
 ```json
-"dependencies": {
+  "dependencies": {
     "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-postcss": "^X.X.0",
+    "postcss-imports": "^X.X.0"
   }
 ```
 
