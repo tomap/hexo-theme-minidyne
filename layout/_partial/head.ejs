@@ -47,7 +47,7 @@
     <% if (page.share_cover) { %>
         <meta property="og:image" content="<%= config.url %><%= page.share_cover %>" />
     <% } else { %>
-        <meta property="og:image" content="https://xn--i-7iq.ws/emoji-image/<%= encodeUri(page.icon || theme.index_icon || '🧙') %>.png" />
+        <meta property="og:image" content="https://xn--i-7iq.ws/emoji-image/<%= encodeURIComponent(page.icon || theme.index_icon || '🧙') %>.png" />
     <% } %>
 
     <!-- Page permalink -->
